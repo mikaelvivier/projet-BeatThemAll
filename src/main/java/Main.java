@@ -8,7 +8,10 @@ public class Main {
         Personnage personnage=new Personnage("Mael", 100, 300, 30);
 
         """création des cartes + niveaux "
-        Carte NewVegas=new Carte(2281,
+        Carte NewVegas=new Carte(2281,"Fallout-NewVegas","Nevada",0,150,150);
+        Carte PointLookout=new Carte(2277,"Fallout3-PointLookout","MaryLand",0,300,300);
+        Carte ThePitt=new Carte(2102,"Fallout76-ThePitt","PittBurgh",0,200,200);
+        
         }
     }
 
