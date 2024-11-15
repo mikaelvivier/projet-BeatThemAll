@@ -18,7 +18,7 @@ public class Main {
         TableauCarte.add(ThePitt));
 
         //endroit de la map dans le jeu associé
-        //Pour la Carte NewVegas
+        //Création des niveau pour la Carte NewVegas (id du niveau, id de la carte, nom du niveau)
         Niveau Goodspring=new Niveau(1,2281,"Goodspring");
         Niveau BlackMountain=new Niveau(2,2281,"Black Mountain");
         Niveau BoulterCity=new Niveau(3,2281,"Boulter City");
@@ -37,16 +37,45 @@ public class Main {
         TableauNiveauNewVegas.add(Nipton);
         TableauNiveauNewVegas.add(Jacobstown);
 
-        //Pour la Carte Point Lookout
-        Niveau Steelyard=new Niveau(9,2277,"Steelyard");
-        Niveau TrainYard=new Niveau(10,2277,"Train Yard");
-        Niveau SupplyPlant=new Niveau(11,2277,"Supply Plan");
-        Niveau TheMill=new Niveau(12,2277,"The Mill");
-        Niveau AbandonedAppartements=new Niveau(13,2277,"Abandoned Appartements");
-        Niveau WernhersHideout=new Niveau(14,2277,"Wernher's Hideout");
-        Niveau Underground=new Niveau(15,2277,"Underground");
-        Niveau Downtown=new Niveau(16,2277,"Downtown");
+        //Création des niveau pour la Carte The Point Lookout (id du niveau, id de la carte, nom du niveau)
+        Niveau Lighthouse=new Niveau(17,2277,"Lighthouse");
+        Niveau JetCrashSite=new Niveau(18,2277,"Jet Crash Site");
+        Niveau SmugglersCamp=new Niveau(19,2277,"Smuggler's Camp");
+        Niveau FloodedSinkhole=new Niveau(20,2277,"Flooded Sinkhole");
+        Niveau CoastalGrotto=new Niveau(21,2277,"Coastal Grotto");
+        Niveau HerzogMine=new Niveau(22,2277,"Herzog Mine");
+        Niveau RiverboatLanding=new Niveau(23,2277,"Riverboat Landing");
+        Niveau TruckWrekage=new Niveau(24,2277,"Truck Wrekage");
+        Niveau Warehouse=new Niveau(25,2277,"Warehouse");
+        Niveau HomestaedMotel=new Niveau(26,2277,"HomestaedMotel");
         TableauNiveauPointLookout = new ArrayList<>();
+        TableauNiveauPointLookout.add(Steelyard);
+        TableauNiveauPointLookout.add(TrainYard);
+        TableauNiveauPointLookout.add(SupplyPlant);
+        TableauNiveauPointLookout.add(TheMill);
+        TableauNiveauPointLookout.add(AbandonedAppartements);
+        TableauNiveauPointLookout.add(WernhersHideout);
+        TableauNiveauPointLookout.add(Underground);
+        TableauNiveauPointLookout.add(Downtown);
+        
+        //Création des niveau pour la Carte The Pitt (id du niveau, id de la carte, nom du niveau)
+        Niveau Steelyard=new Niveau(9,2102,"Steelyard");
+        Niveau TrainYard=new Niveau(10,2102,"Train Yard");
+        Niveau SupplyPlant=new Niveau(11,2102,"Supply Plan");
+        Niveau TheMill=new Niveau(12,2102,"The Mill");
+        Niveau AbandonedAppartements=new Niveau(13,2102,"Abandoned Appartements");
+        Niveau WernhersHideout=new Niveau(14,2102,"Wernher's Hideout");
+        Niveau Underground=new Niveau(15,2102,"Underground");
+        Niveau Downtown=new Niveau(16,2102,"Downtown");
+        TableauNiveauThePitt = new ArrayList<>();
+        TableauNiveauThePitt.add(TheTrainyard);
+        TableauNiveauThePitt.add(TheFoundry);
+        TableauNiveauThePitt.add(Uptown);
+        TableauNiveauThePitt.add(DowntownPitt);
+        TableauNiveauThePitt.add(TheSteelYard);
+        TableauNiveauThePitt.add(TheMillPitt);
+        TableauNiveauThePitt.add(Haven);
+        TableauNiveauThePitt.add(WernhersRefuge);
 
     }
 
