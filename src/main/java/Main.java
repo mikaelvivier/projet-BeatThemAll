@@ -79,3 +79,8 @@ public class Main {
 
     }
 
+//Pour la suite pour faire les créatures : https://fallout.fandom.com/wiki/Fallout_3_creatures
+//toute mes niveaux viennent de ce site (les maps de chaque jeu)
+
+
+
