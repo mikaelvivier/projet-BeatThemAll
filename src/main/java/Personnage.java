@@ -1,41 +1,30 @@
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import javax.swing.*;
+import java.awt.*;
 
 @Data
 @AllArgsConstructor
-public class Personnage implements KeyListener {
+public class Personnage{
     private String nom;
     private int pv;
-    private int forceattaque;
+    private int forceAttaque;
     private int shield;
-    private static int heal;
+    static int heal;
+    Image imgPerso;
 
+    public Personnage(String moineShaolin, int pv, int forceAttaque, int shield){
+        ImageIcon icone=new ImageIcon("images/bebe_moine.png");
+        imgPerso= icone.getImage();
+    }
     /**
      * test voila
      * @param e the event to be processed
      */
-    @Override
-    public void keyTyped(KeyEvent e) {
-    }
-    @Override
-    public void keyReleased(KeyEvent e) {
-    }
-    @Override
-    public void keyPressed(KeyEvent e){
-        if (e.getKeyCode()== KeyEvent.VK_R){
-            Personnage.heal=100;
-        }
-    }
+
 }
 
-abstract class Ennemie {
-    private String nom;
-    private int pv;
-    private int forceattaque;
-    private boolean attaquedistante;
-}
+
 
 
