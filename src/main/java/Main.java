@@ -13,9 +13,9 @@ public class Main {
         Carte NewVegas=new Carte(2281,"Fallout-NewVegas","Nevada",0,150,150);
         Carte PointLookout=new Carte(2277,"Fallout3-PointLookout","MaryLand",0,300,300);
         Carte ThePitt=new Carte(2102,"Fallout76-ThePitt","PittBurgh",0,200,200);
-        TableauCarte = new ArrayList(TableauCarte.add(NewVegas);
+        TableauCarte = new ArrayList(TableauCarte.add(NewVegas));
         TableauCarte.add(PointLookout);
-        TableauCarte.add(ThePitt));
+        TableauCarte.add(ThePitt);
 
         //endroit de la map dans le jeu associé
         //Création des niveau pour la Carte NewVegas (id du niveau, id de la carte, nom du niveau)
@@ -27,7 +27,7 @@ public class Main {
         Niveau Novac=new Niveau(6,2281,"Novac");
         Niveau Nipton=new Niveau(7,2281,"Nipton");
         Niveau Jacobstown=new Niveau(8,2281,"Jacobstown");
-        TableauNiveauNewVegas =  new ArrayList<>();
+        TableauNiveauNewVegas=new ArrayList<>();
         TableauNiveauNewVegas.add(Goodspring);
         TableauNiveauNewVegas.add(BlackMountain);
         TableauNiveauNewVegas.add(BoulterCity);
@@ -48,7 +48,7 @@ public class Main {
         Niveau TruckWrekage=new Niveau(24,2277,"Truck Wrekage");
         Niveau Warehouse=new Niveau(25,2277,"Warehouse");
         Niveau HomestaedMotel=new Niveau(26,2277,"HomestaedMotel");
-        TableauNiveauPointLookout = new ArrayList<>();
+        TableauNiveauPointLookout=new ArrayList<>();
         TableauNiveauPointLookout.add(Steelyard);
         TableauNiveauPointLookout.add(TrainYard);
         TableauNiveauPointLookout.add(SupplyPlant);
@@ -67,7 +67,7 @@ public class Main {
         Niveau WernhersHideout=new Niveau(14,2102,"Wernher's Hideout");
         Niveau Underground=new Niveau(15,2102,"Underground");
         Niveau Downtown=new Niveau(16,2102,"Downtown");
-        TableauNiveauThePitt = new ArrayList<>();
+        TableauNiveauThePitt=new ArrayList<>();
         TableauNiveauThePitt.add(TheTrainyard);
         TableauNiveauThePitt.add(TheFoundry);
         TableauNiveauThePitt.add(Uptown);
@@ -80,7 +80,7 @@ public class Main {
     }
 
 //Pour la suite pour faire les créatures : https://fallout.fandom.com/wiki/Fallout_3_creatures
-//toute mes niveaux viennent de ce site (les maps de chaque jeu)
+//tout mes niveaux viennent de ce site (les maps de chaque jeu)
 
 
 
