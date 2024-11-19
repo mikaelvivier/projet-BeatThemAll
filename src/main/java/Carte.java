@@ -15,5 +15,14 @@ public class Carte {
     private int longueur;
 
 }
+public class TableauCarte {
+    private List<Carte> cartes; // Liste pour stocker les objets Carte
+
+    // Constructeur : initialise une liste vide
+    public TableauCarte() {
+        this.cartes = new ArrayList<>();
+    }
+}
+
 
 
