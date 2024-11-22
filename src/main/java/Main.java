@@ -7,8 +7,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Ce jeu vidéoludique vous est proposé par VIVIER Mikaël et PIOCHE-THIROUX Maël\n" + "Amusez vous bien :-)");
-        Personnage personnage = new Personnage("Mael", 100, 300, 30);
+        //Personnage personnage = new Personnage("Mael", 100, 300, 30);
 
+
+        /*
         //création des cartes + niveaux
         Carte NewVegas = new Carte(2281, "Fallout-NewVegas", "Nevada", 0, 150, 150);
         Carte PointLookout = new Carte(2277, "Fallout3-PointLookout", "MaryLand", 0, 300, 300);
@@ -82,4 +84,7 @@ public class Main {
 //tout mes niveaux viennent de ce site (les maps de chaque jeu)
 
 
+         */
 
+    }
+}
