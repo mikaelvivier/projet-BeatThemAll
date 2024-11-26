@@ -22,7 +22,7 @@ public class Jeu {
     }
 
     public void deplacer(){
-        int mouvement =1;
+        int mouvement =random.nextInt(-1, 3);
         positionPerso+=mouvement;
         if (positionPerso> carte.getFin()){
             positionPerso-=carte.getFin();

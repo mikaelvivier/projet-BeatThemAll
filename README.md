@@ -28,3 +28,6 @@ maintenant ... », etc…)
 - Faire des commentaire ou java doc
 - (Op0onnel) U0lisa0on des stream et des fonctions anonymes
 - Faire le main dans un ordre logique (plutôt à la fin quand toutes les méthodes seront réalisées)
+
+
+Mael: looing à la place de sytèmeout
