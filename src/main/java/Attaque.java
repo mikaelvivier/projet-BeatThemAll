@@ -16,15 +16,15 @@ public class Attaque {
             personnage.setPv(personnage.getPv() + 20);
         }
         int nbAttaques = random.nextInt(5) + 1;
-        for (int i = 0; i < nbAttaques; i++) {
-            System.out.println(personnage.getNom() + " attaque " + ennemi.getNom());
-            ennemi.setPv(ennemi.getPv() - personnage.getForceAttaque());
+        System.out.println(personnage.getNom() + " attaque " + nbAttaques + "fois" + ennemi.getNom());
+
+            ennemi.setPv(ennemi.getPv() - nbAttaques* personnage.getForceAttaque());
             if (ennemi.getPv() <= 0) {
                 System.out.println("L'ennemi a été vaincu");
                 return;
             }
-        }
     }
+
 
     public void ennemiAttaque(Personnage personnage, Ennemi ennemi) {
         //cas où la capacité spécial Matrix est activée

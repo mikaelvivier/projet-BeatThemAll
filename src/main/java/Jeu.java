@@ -12,6 +12,10 @@ public class Jeu {
     private int deplacementSpecial;
     private boolean utiliseCapacite;
     private int tourCapacite = 0;
+    private Personnage personnage;
+    private Ennemi ennemi;
+    private Attaque attaque;
+
 
     public Jeu(Carte carte) {
         this.carte=carte;
@@ -21,28 +25,48 @@ public class Jeu {
         this.utiliseCapacite =false;
     }
 
-    public void deplacer(){
-        int mouvement =random.nextInt(-1, 3);
-        positionPerso+=mouvement;
-        if (positionPerso> carte.getFin()){
-            positionPerso-=carte.getFin();
+    public void deplacer() {
+        int mouvement = 1;
+        positionPerso += mouvement;
+        if (positionPerso > carte.getFin()) {
+            positionPerso -= carte.getFin();
         }
         System.out.println("Position actuelle du joueur: " + positionPerso);
         //vérification aléatoire pour le coup spécial
+        rencontre();
+    }
+
+
+    public void rencontre(){
+        ennemi=rencontrerEnnemi();
+        rencontrerEnnemi(); //pour avoir le log "Vous rencontrez un (ennemi)"
         if (positionPerso==deplacementSpecial){
             coupSpecial();
         }
-    }
+        attaque.combattre(personnage, rencontrerEnnemi());
+        }
 
-    public boolean estTermine(){
+
+    private boolean aGagne(){
         return positionPerso>=carte.getFin();
     }
 
     public void gagne(){
-        if (estTermine()){
+        if (aGagne()){
             System.out.println("Vous avez gagné");
         }
     }
+
+    private boolean aPerdu(){
+        return(personnage.getPv()<0);
+    }
+
+    public void perdu(){
+        if (aPerdu()){
+            System.out.println("Vous avez perdu");
+        }
+    }
+
 
     public Ennemi rencontrerEnnemi() {
         int rand = random.nextInt(3) + 1;
@@ -66,4 +90,6 @@ public class Jeu {
         System.out.println("La capacité spéciale s'active !");
         utiliseCapacite =true;
     }
+
 }
+

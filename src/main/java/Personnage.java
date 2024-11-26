@@ -1,10 +1,6 @@
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import javax.swing.*;
-import java.awt.*;
-import java.util.ArrayList;
-import java.util.Objects;
 
 @Data
 @AllArgsConstructor

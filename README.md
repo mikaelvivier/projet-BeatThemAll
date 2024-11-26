@@ -16,9 +16,6 @@ Le héros peut taper entre 3 et 5 fois aléatoirement.
 
 ## suite 22/11, à faire:
 - ```Quand il avance il peut rencontrer un certain nombre d’ennemis (aléatoires)```
-Le personnage rencontre un ennemi par déplacement. Cela pose un problème si on veut utiliser la capacité One Shot (tue tous les ennemis d’un coup).
-- La partie se termine si le héros meurt
-- Le personnage peut reculer (faire en sorte qu'il ait plus de chance d'avancer avec la classe Random)
 
 - Utilisation d’au moins 1 interface
 - Tracer les informa0ons importantes dans un fichier de log dans le format que vous
@@ -28,6 +25,9 @@ maintenant ... », etc…)
 - Faire des commentaire ou java doc
 - (Op0onnel) U0lisa0on des stream et des fonctions anonymes
 - Faire le main dans un ordre logique (plutôt à la fin quand toutes les méthodes seront réalisées)
+Boucle de Jeu: Implémentez une boucle principale pour le jeu qui continue jusqu'à ce que le joueur
+gagne ou perde. Cette boucle devrait gérer le déplacement du personnage, 
+les rencontres avec les ennemis,- et les combats.
 
 
 Mael: looing à la place de sytèmeout
