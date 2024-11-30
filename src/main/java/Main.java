@@ -6,8 +6,22 @@ import java.util.logging.*;
 
 //VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
 //Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
+
+
 public class Main {
-    /*
+
+    public static void main(String[] args) {
+
+        //Jeu où le héros peut gagner et perdre
+        Personnage personnage = new Personnage("Vault Dweller", 150, 10, "OneShot");
+        Carte carte = new Carte("Wasteland", "Nuclear Ruins", 10);
+        Attaque attaque=new Attaque(null, personnage, carte);
+        Jeu jeu = new Jeu(carte, personnage, attaque);
+        attaque.setJeu(jeu);
+        jeu.demarrerLeJeu();
+
+
+            /*
     FileHandler fileHandler = new FileHandler("BeatThemAll.log", true); // 'true' pour append
         fileHandler.setFormatter(new DateFormatter()); // format de logs avec la date en entete
         logger.addHandler(fileHandler);
@@ -15,11 +29,8 @@ public class Main {
         logger.info("L'application a démarré");
 
     */
-    public static void main(String[] args) {
-        System.out.println("Ce jeu vidéoludique vous est proposé par VIVIER Mikaël et PIOCHE-THIROUX Maël\n" + "Amusez vous bien :-)");
+
         //Personnage personnage = new Personnage("Mael", 100, 300, 30);
-
-
         /*
         //création des cartes + niveaux
         Carte NewVegas = new Carte(2281, "Fallout-NewVegas", "Nevada", 0, 150, 150);

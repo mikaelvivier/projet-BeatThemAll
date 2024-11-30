@@ -24,10 +24,18 @@ maintenant ... », etc…)
 - Faire les tests
 - Faire des commentaire ou java doc
 - (Op0onnel) U0lisa0on des stream et des fonctions anonymes
-- Faire le main dans un ordre logique (plutôt à la fin quand toutes les méthodes seront réalisées)
-Boucle de Jeu: Implémentez une boucle principale pour le jeu qui continue jusqu'à ce que le joueur
-gagne ou perde. Cette boucle devrait gérer le déplacement du personnage, 
-les rencontres avec les ennemis,- et les combats.
 
 
 Mael: looing à la place de sytèmeout
+
+## suite 22/11, à faire:
+
+- Les tests ne marchent pas. On ne peut pas appeler la méthode jeu.personnageAttaque() 
+car elle est dépend d'autres méthodes. Il faudrait vérifier que les booleans renvoient true
+à un moment de la partie.
+- L'interface doit être utilisée par 2 classes?
+- Faire des commentaire ou java doc
+- Tracer les informa0ons importantes dans un fichier de log dans le format que vous
+souhaitez (ex : « Le héros avance », « L’ennemi 1 a3aque le héros, ses PV sont
+maintenant ... », etc…)
+- Ajouter des coups spéciaux

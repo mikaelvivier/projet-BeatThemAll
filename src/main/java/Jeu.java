@@ -41,9 +41,17 @@ public class Jeu {
 
     public void deplacer() {
         while (!aGagne()) {
+            /*try {
+                Thread.sleep(7000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            */
+
             positionPerso += 1;
-            System.out.println("Position actuelle du joueur est à " + positionPerso + " sur " + totalDeplacements);
-            System.out.println("Votre joueur a " + personnage.getPv() +"PV");
+            System.out.println("\n");
+            System.out.println("ROUND " + positionPerso + " SUR " + totalDeplacements + " !! ");
+            System.out.println(personnage.getNom() + " a " + personnage.getPv() +"PV");
             //vérification aléatoire pour le coup spécial
             rencontre();
         }
@@ -53,8 +61,9 @@ public class Jeu {
     }
 
     public void rencontre(){
-        Ennemi nouvelEnnemi=rencontrerEnnemi(); //pour avoir le log "Vous rencontrez un (ennemi)"
+        Ennemi nouvelEnnemi=rencontrerEnnemi();
         attaque.setEnnemi(nouvelEnnemi);
+        attaque.setEnnemiVaincu(false);
         if (positionPerso==deplacementSpecial){
             coupSpecial();
         }
@@ -72,7 +81,7 @@ public class Jeu {
 
 
     public Ennemi rencontrerEnnemi() {
-        int rand = random.nextInt(3) + 1;
+        int rand = random.nextInt(4) + 1;
         Ennemi ennemi = null;
         switch (rand) {
             case 1:
@@ -83,6 +92,9 @@ public class Jeu {
                 break;
             case 3:
                 ennemi = new Gangster();
+                break;
+            case 4:
+                ennemi= new Kamikaze();
                 break;
         }
         System.out.println("Vous rencontrez un " + ennemi.getNom() + " avec "+ ennemi.getPv()+ " PV" + " et " + ennemi.getForceAttaque() + " de force d'attaque");
