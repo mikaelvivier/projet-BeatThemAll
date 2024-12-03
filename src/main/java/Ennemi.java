@@ -16,18 +16,25 @@ public abstract class Ennemi {
 
 class Brigand extends Ennemi {
     public Brigand() {
-        super("Brigand", 20,10, false);
+        super("Brigand", 50,10, false);
     }
 }
 
 class Catcheur extends Ennemi {
     public Catcheur() {
-        super("Catcheur", 50, 10, false);
+        super("Catcheur", 80, 10, false);
     }
 }
 
 class Gangster extends Ennemi {
     public Gangster() {
-        super("Gangster", 20, 10, true); // Gangsters ont toujours une attaque distante
+        super("Gangster", 50, 10, true); // Gangsters ont toujours une attaque distante
     }
 }
+
+class Kamikaze extends Ennemi {
+    public Kamikaze() {
+        super("kamikaze", 30, 20, true); // Gangsters ont toujours une attaque distante
+    }
+}
+

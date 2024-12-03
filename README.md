@@ -16,9 +16,6 @@ Le héros peut taper entre 3 et 5 fois aléatoirement.
 
 ## suite 22/11, à faire:
 - ```Quand il avance il peut rencontrer un certain nombre d’ennemis (aléatoires)```
-Le personnage rencontre un ennemi par déplacement. Cela pose un problème si on veut utiliser la capacité One Shot (tue tous les ennemis d’un coup).
-- La partie se termine si le héros meurt
-- Le personnage peut reculer (faire en sorte qu'il ait plus de chance d'avancer avec la classe Random)
 
 - Utilisation d’au moins 1 interface
 - Tracer les informa0ons importantes dans un fichier de log dans le format que vous
@@ -27,7 +24,18 @@ maintenant ... », etc…)
 - Faire les tests
 - Faire des commentaire ou java doc
 - (Op0onnel) U0lisa0on des stream et des fonctions anonymes
-- Faire le main dans un ordre logique (plutôt à la fin quand toutes les méthodes seront réalisées)
 
 
 Mael: looing à la place de sytèmeout
+
+## suite 22/11, à faire:
+
+- Les tests ne marchent pas. On ne peut pas appeler la méthode jeu.personnageAttaque() 
+car elle est dépend d'autres méthodes. Il faudrait vérifier que les booleans renvoient true
+à un moment de la partie.
+- L'interface doit être utilisée par 2 classes?
+- Faire des commentaire ou java doc
+- Tracer les informa0ons importantes dans un fichier de log dans le format que vous
+souhaitez (ex : « Le héros avance », « L’ennemi 1 a3aque le héros, ses PV sont
+maintenant ... », etc…)
+- Ajouter des coups spéciaux
