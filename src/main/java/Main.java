@@ -1,3 +1,4 @@
+import javax.swing.text.DateFormatter;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,15 +21,13 @@ public class Main {
         attaque.setJeu(jeu);
         jeu.demarrerLeJeu();
 
+        {   //Création du fichier de logs
+            FileHandler fileHandler = new FileHandler("BeatThemAll.log", true);
+            FileHandler.setFormatter(new DateFormatter()); // format de logs avec la date en entete
+            logger.addHandler(fileHandler);
+            logger.setLevel(Level.ALL);
+            logger.info("L'application a démarré");
 
-            /*
-    FileHandler fileHandler = new FileHandler("BeatThemAll.log", true); // 'true' pour append
-        fileHandler.setFormatter(new DateFormatter()); // format de logs avec la date en entete
-        logger.addHandler(fileHandler);
-        logger.setLevel(Level.ALL);
-        logger.info("L'application a démarré");
-
-    */
 
         //Personnage personnage = new Personnage("Mael", 100, 300, 30);
         /*
