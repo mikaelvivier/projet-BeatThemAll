@@ -36,6 +36,6 @@ car elle est dépend d'autres méthodes. Il faudrait vérifier que les booleans 
 - L'interface doit être utilisée par 2 classes?
 - Faire des commentaire ou java doc
 - Tracer les informa0ons importantes dans un fichier de log dans le format que vous
-souhaitez (ex : « Le héros avance », « L’ennemi 1 a3aque le héros, ses PV sont
+souhaitez (ex : « Le héros avance », « L’ennemi 1 attaque le héros, ses PV sont
 maintenant ... », etc…)
-- Ajouter des coups spéciaux
+- faire un mock pour les tests. créer la situation la + simple possible.

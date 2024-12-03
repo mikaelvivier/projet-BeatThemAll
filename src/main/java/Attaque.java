@@ -3,6 +3,10 @@ import lombok.Data;
 
 import java.util.Objects;
 import java.util.Random;
+
+/**
+ * Cette classe contient les méthodes liés à la logique métier des affrontements entre le héro et les ennemis.
+ */
 @Data
 @AllArgsConstructor
 public class Attaque implements CapaciteSpeciale{
@@ -10,7 +14,6 @@ public class Attaque implements CapaciteSpeciale{
     private Jeu jeu;
     Personnage personnage;
     Ennemi ennemi;
-    boolean ennemiVaincu=false;
 
     public Attaque(Jeu jeu,Personnage personnage, Carte carte){
         random=new Random();
@@ -62,6 +65,9 @@ public class Attaque implements CapaciteSpeciale{
                  jeu.setUtiliseCapacite(false);
              }
          } else {
+             if (CSGantelets()){
+                 useCSGantelets();
+             }
              System.out.println(ennemi.getNom() + " attaque " + personnage.getNom() + ", avec une force de " + ennemi.getForceAttaque() + "! ");
              personnage.setPv(personnage.getPv() - ennemi.getForceAttaque());
              System.out.println(personnage.getNom() + " a " + personnage.getPv() + " PV ");
@@ -90,6 +96,10 @@ public class Attaque implements CapaciteSpeciale{
         return Objects.equals(personnage.getCapaciteSpeciale(), "OneShot") && jeu.isUtiliseCapacite();
     }
 
+    public boolean CSGantelets(){
+        return Objects.equals(personnage.getCapaciteSpeciale(), "Gantelets") && jeu.isUtiliseCapacite();
+    }
+
     public void useCSHeal(){
         System.out.println(personnage.getNom() + " se heal");
         personnage.setPv(personnage.getPv() + 20);
@@ -107,5 +117,10 @@ public class Attaque implements CapaciteSpeciale{
         jeu.setTourCapacite(jeu.getTourCapacite() + 1);
     }
 
+    public void useCSGantelets(){
+        System.out.println(personnage.getNom() + " utilise son coup spéciale et gagne des gantelets qui lui font gagner +20% d'attaque ! ");
+        personnage.setForceAttaque(personnage.getForceAttaque()+2);
+        jeu.setUtiliseCapacite(false);
+    }
 
 }

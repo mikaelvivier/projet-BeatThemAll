@@ -3,31 +3,60 @@ import lombok.Data;
 
 import java.util.Random;
 
+/**
+ * Cette classe contient les méthodes liés au déroulement principal du jeu.
+ */
 @Data
 @AllArgsConstructor
-public class Jeu {
-    private Carte carte;
-    private int positionPerso;
-    private int totalDeplacements;
-    private Random random;
-    private int deplacementSpecial;
-    private boolean utiliseCapacite;
-    private int tourCapacite = 0;
-    private Personnage personnage;
-    private Ennemi ennemi;
-    private Attaque attaque;
 
+public class Jeu {
+    /** Référence à la classe Carte, représentant la carte du jeu. */
+    private Carte carte;
+
+    /** Position actuelle du personnage sur la carte. */
+    private int positionPerso;
+
+    /** Longueur totale de la carte. */
+    private int totalDeplacements;
+
+    /** Générateur de nombres aléatoires pour la rencontre d'ennemi et le coup spécial.  */
+    private Random random;
+
+    /** Indice du déplacement spécial, déterminé aléatoirement. */
+    private int deplacementSpecial;
+
+    /** Indique si la capacité spéciale a été utilisée. */
+    private boolean utiliseCapacite;
+
+    /** Référence au personnage. */
+    private Personnage personnage;
+
+    /** Référence à l'objet Attaque. */
+    private Attaque attaque;
+    private int tourCapacite = 0;
+    private Ennemi ennemi;
+
+    /**
+     *
+     * @param carte Réfère à la classe Carte
+     * @param personnage Réfère à la classe Personnage
+     * @param attaque Réfère à la classe Attaque
+     */
     public Jeu(Carte carte, Personnage personnage, Attaque attaque) {
         this.carte=carte;
         this.positionPerso= carte.getDebut();
         this.totalDeplacements= carte.getLongueur();
         this.random=new Random();
-        this.deplacementSpecial=random.nextInt(totalDeplacements);
+        this.deplacementSpecial=random.nextInt(totalDeplacements-1); //deplacementSpecial s'activera aléatoirement lors d'un déplacement en fonction de la longueur de la carte.
         this.utiliseCapacite =false;
         this.personnage=personnage;
         this.attaque=attaque;
     }
 
+    /**
+     * // Donne les caractéristiques du personnage et de la carte.
+     * Appelle la méthode déplacer().
+     */
     public void demarrerLeJeu(){
         System.out.println("Ce jeu vidéoludique vous est proposé par VIVIER Mikaël et PIOCHE-THIROUX Maël\n" + "Amusez vous bien :-)");
         System.out.println("Votre personnage " + personnage.getNom() + " possède ces caractéristiques :");
@@ -39,14 +68,19 @@ public class Jeu {
         deplacer();
     }
 
+    /**
+     * Déplace le personnage tant que le jeu n'est pas fini.
+     * Donne les informations sur la position et la vie du personnage à chaque ROUND. Arrête le programme si le Héros a gagné.
+     * Appelle la méthode rencontre().
+     */
     public void deplacer() {
         while (!aGagne()) {
-            /*try {
+            try {
                 Thread.sleep(7000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            */
+
 
             positionPerso += 1;
             System.out.println("\n");
@@ -60,10 +94,13 @@ public class Jeu {
         System.exit(0);
     }
 
+    /**
+     *  Récupère un ennemi aléatoire à chaque rencontre avec la méthode rencontrerEnnemi().
+     *  Active le coup spécial si l'attribut entier aléatoire est égal à la position du personnage.
+     */
     public void rencontre(){
         Ennemi nouvelEnnemi=rencontrerEnnemi();
         attaque.setEnnemi(nouvelEnnemi);
-        attaque.setEnnemiVaincu(false);
         if (positionPerso==deplacementSpecial){
             coupSpecial();
         }
