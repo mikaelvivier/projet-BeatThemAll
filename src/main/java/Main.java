@@ -4,6 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.io.IOException;
 import java.util.logging.*;
+import lombok.SneakyThrows;
+import javax.swing.text.DateFormatter;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+
+import static java.nio.file.Files.createFile;
 
 //VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
 //Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
@@ -13,23 +24,56 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //Jeu où le héros peut gagner et perdre
-        Personnage personnage = new Personnage("Vault Dweller", 150, 10, "OneShot");
-        Carte carte = new Carte("Wasteland", "Nuclear Ruins", 10);
-        Attaque attaque=new Attaque(null, personnage, carte);
-        Jeu jeu = new Jeu(carte, personnage, attaque);
-        attaque.setJeu(jeu);
-        jeu.demarrerLeJeu();
 
-        {   //Création du fichier de logs
-            FileHandler fileHandler = new FileHandler("BeatThemAll.log", true);
-            FileHandler.setFormatter(new DateFormatter()); // format de logs avec la date en entete
-            logger.addHandler(fileHandler);
-            logger.setLevel(Level.ALL);
-            logger.info("L'application a démarré");
+//VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
+//Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
+
+        public class Main {
+            //  @SneakyThrows
+            public static void main(String[] args) {
+                Logger logger = Logger.getLogger(Main.class.getName());
+                FileHandler fileHandler = null;
+                try {
+                    fileHandler = new FileHandler("*/GitHub/BeatThemAll.log", true);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (SecurityException e) {
+                    e.printStackTrace();
+                }
+                logger.addHandler(fileHandler);
+                logger.setLevel(Level.ALL);
+                logger.warning("warning dommage");
+                logger.info("L'application a démarré");
+                logger.severe("severe dommage");
+
+        /*
+        //createFile(); { //méthode à la mano pour créer un fichier sans sneaky thorws
+            try {
+                File file = new File("BeatThemAll.log");
+                file.createNewFile();
+            } catch (Exception e) {
+                throw new RuntimeException(e); // Relance l'exception en tant que RuntimeException
+            }
+        }
+        //Création du fichier de logs
+        final Logger logger = Logger.getLogger(Main.class.getName()); // Déclaration du logger
+        FileHandler fileHandler = new FileHandler("C:/Users/m.piochethiroux/Documents/GitHub/BeatThemAll.log", true);
+        //fileHandler.setFormatter(new DateFormatter()); // format de logs avec la date en entete
+        logger.addHandler(fileHandler);
+        logger.setLevel(Level.ALL);
+        logger.info("L'application a démarré");
+        */
+
+                //Jeu où le héros peut gagner et perdre
+                Personnage personnage = new Personnage("Vault Dweller", 150, 10, "OneShot");
+                Carte carte = new Carte("Wasteland", "Nuclear Ruins", 10);
+                Attaque attaque = new Attaque(null, personnage, carte);
+                Jeu jeu = new Jeu(carte, personnage, attaque);
+                attaque.setJeu(jeu);
+                jeu.demarrerLeJeu();
 
 
-        //Personnage personnage = new Personnage("Mael", 100, 300, 30);
+                //Personnage personnage = new Personnage("Mael", 100, 300, 30);
         /*
         //création des cartes + niveaux
         Carte NewVegas = new Carte(2281, "Fallout-NewVegas", "Nevada", 0, 150, 150);
@@ -106,5 +150,7 @@ public class Main {
 
          */
 
+            }
+        }
     }
 }
