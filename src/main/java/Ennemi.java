@@ -34,7 +34,7 @@ class Gangster extends Ennemi {
 
 class Kamikaze extends Ennemi {
     public Kamikaze() {
-        super("kamikaze", 30, 20, true); // Gangsters ont toujours une attaque distante
+        super("kamikaze", 40, 20, false); // Gangsters ont toujours une attaque distante
     }
 }
 

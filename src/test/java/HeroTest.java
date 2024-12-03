@@ -35,7 +35,7 @@ public class HeroTest {
     }
 
     @Test
-    public void testHeroMeurt(){
+    public void testPersonnageMeurt(){
         setUpTest2();
         jeu.demarrerLeJeu();
         assertTrue(jeu.aPerdu());
