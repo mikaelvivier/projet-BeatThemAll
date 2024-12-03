@@ -1,3 +1,4 @@
+import javax.swing.text.DateFormatter;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,14 +8,14 @@ import java.util.logging.*;
 //VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
 //Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
 public class Main {
-    FileHandler fileHandler = new FileHandler("BeatThemAll.log", true); // 'true' pour append
-        fileHandler.setFormatter(new DateFormatter()); // format de logs avec la date en entete
+    public static void main(String[] args) {   //Création du fichier de logs
+        FileHandler fileHandler = new FileHandler("BeatThemAll.log", true);
+        FileHandler.setFormatter(new DateFormatter()); // format de logs avec la date en entete
         logger.addHandler(fileHandler);
         logger.setLevel(Level.ALL);
         logger.info("L'application a démarré");
 
 
-    public static void main(String[] args) {
         System.out.println("Ce jeu vidéoludique vous est proposé par VIVIER Mikaël et PIOCHE-THIROUX Maël\n" + "Amusez vous bien :-)");
         //Personnage personnage = new Personnage("Mael", 100, 300, 30);
 
