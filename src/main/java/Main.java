@@ -1,5 +1,4 @@
 import lombok.SneakyThrows;
-
 import java.io.IOException;
 import java.util.logging.*;
 
@@ -195,10 +194,10 @@ public class Main {
             logger.setLevel(Level.ALL);
             logger.warning("warning dommage");
             logger.info("L'application a démarré");
-            logger.severe("severe dommage");
+            logger.severe("severe dommage");}
 
 //************************************************************************************************************************************************************************************
- /*Archive et pistes non poursuivi
+ /*Archive et pistes non poursuivies
 //************************************************************************************************************************************************************************************
        
 
