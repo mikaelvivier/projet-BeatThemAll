@@ -162,9 +162,5 @@ public class Jeu {
                 ", carte=" + carte.getNom() +
                 '}';
     }
-
-    public void gererCombat(Attaque attaque, Jeu jeu, Ennemi ennemi) {
-
-    }
 }
 

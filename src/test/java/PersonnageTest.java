@@ -35,7 +35,7 @@ public class PersonnageTest {
             jeu.coupSpecial(); //vérifie si le coup spécial est activé et l'active si c'est le cas
             //combat:
             while (!attaque.ennemiVaincu() && !jeu.aPerdu()) {
-                jeu.gererCombat(attaque, jeu, ennemi);
+                Main.gererCombat(attaque, jeu, ennemi);
             }
         }
         if (jeu.aGagne()) {

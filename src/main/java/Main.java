@@ -186,13 +186,15 @@ public static class Main {
 
  //@SneakyThrows
  public static void main(String[] args) {
-        Logger logger = Logger.getLogger(com.sun.tools.javac.Main.class.getName());
+        Logger logger = Logger.getLogger("logger.Main");
         FileHandler fileHandler = null;
         try {
-             fileHandler = new FileHandler("BeatThemAll1.log", true);
-            } catch (IOException | SecurityException e) {
-             e.printStackTrace();
-            }
+             fileHandler = new FileHandler("./BeatThemAll.log", true);
+        } catch (SecurityException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
      logger.addHandler(fileHandler);
             logger.setLevel(Level.ALL);
             logger.warning("warning dommage");
