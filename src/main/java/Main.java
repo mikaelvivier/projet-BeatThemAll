@@ -1,17 +1,18 @@
-import lombok.SneakyThrows;
+//import lombok.SneakyThrows;
 import java.io.IOException;
 import java.util.logging.*;
 
 //VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
 //Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
-public class Main {
+public static class Main {
     public static void main(String[] args) {
-        // Exécuter les différents jeux
+        // Exécuter les différents jeux/tests
         //jeu1();
         //jeu2();
         jeu3();
         //jeu4();
     }
+
 
     public static void jeu1() {
         /**
@@ -183,10 +184,9 @@ public class Main {
         }
     }
 
-
- @SneakyThrows
- public static void Main(String[] args) {
-        Logger logger = Logger.getLogger(Main.class.getName());
+ //@SneakyThrows
+ public static void main(String[] args) {
+        Logger logger = Logger.getLogger(com.sun.tools.javac.Main.class.getName());
         FileHandler fileHandler = null;
         try {
              fileHandler = new FileHandler("BeatThemAll1.log", true);
