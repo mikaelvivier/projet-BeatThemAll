@@ -1,4 +1,7 @@
-import java.util.logging.Level;
+import lombok.SneakyThrows;
+
+import java.io.IOException;
+import java.util.logging.*;
 
 //VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
 //Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
@@ -179,24 +182,20 @@ public class Main {
     
     
     
-    public class Main {
-            //  @SneakyThrows
-            public static void main(String[] args) {
-                Logger logger = Logger.getLogger(Main.class.getName());
-                FileHandler fileHandler = null;
-                try {
-                    fileHandler = new FileHandler("BeatThemAll.log", true);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (SecurityException e) {
-                    e.printStackTrace();
-                }
-                logger.addHandler(fileHandler);
-                logger.setLevel(Level.ALL);
-                logger.warning("warning dommage");
-                logger.info("L'application a démarré");
-                logger.severe("severe dommage");
-
+ @SneakyThrows
+ public static void Main(String[] args) {
+        Logger logger = Logger.getLogger(Main.class.getName());
+        FileHandler fileHandler = null;
+        try {
+             fileHandler = new FileHandler("BeatThemAll.log", true);
+            } catch (IOException | SecurityException e) {
+             e.printStackTrace();
+            }
+     logger.addHandler(fileHandler);
+            logger.setLevel(Level.ALL);
+            logger.warning("warning dommage");
+            logger.info("L'application a démarré");
+            logger.severe("severe dommage");
 
 //************************************************************************************************************************************************************************************
  /*Archive et pistes non poursuivi
