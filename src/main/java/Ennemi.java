@@ -1,6 +1,8 @@
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.util.Objects;
+
 @Data
 @AllArgsConstructor
 public abstract class Ennemi {
@@ -9,8 +11,10 @@ public abstract class Ennemi {
     private int forceAttaque;
     private boolean attaqueDistante;
 
-    public void attaquer(){
-        System.out.println(nom+ "attaque avec une force de "+ forceAttaque +"!");
+
+    public boolean isGangster() {
+        return (Objects.equals(nom, "Gangster"));
+
     }
 }
 

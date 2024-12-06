@@ -1,40 +1,195 @@
-import javax.swing.text.DateFormatter;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.List;
-import java.io.IOException;
-import java.util.logging.*;
-import lombok.SneakyThrows;
-import javax.swing.text.DateFormatter;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.List;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-
-import static java.nio.file.Files.createFile;
-
 //VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
 //Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
 
 
 public class Main {
 
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+        // Exécuter les différents jeux
+        //jeu1();
+        //jeu2();
+        jeu3();
+        //jeu4();
+    }
+
+    public static void jeu1() {
+        /**
+         * Jeu 1 : Cooper Howard à Wasteland.
+         */
+        Personnage personnage = new Personnage("Cooper Howard", 150, 10, "OneShot");
+        Carte carte = new Carte("Wasteland", "Nuclear Ruins", 10);
+        Jeu jeu = new Jeu(carte, personnage, null);
+        Attaque attaque = new Attaque(jeu, personnage);
+        jeu.setAttaque(attaque);
+        Ennemi ennemi;
+
+        //déroulement jeu 1
+        jeu.demarrerLeJeu();
+        while (!jeu.aGagne() && !jeu.aPerdu()) {
+            jeu.deplacer();
+            ennemi = jeu.rencontrerEnnemi();
+            attaque.setEnnemi(ennemi);
+            jeu.coupSpecial(); //vérifie si le coup spécial est activé et l'active si c'est le cas
+            //combat:
+            while (!attaque.ennemiVaincu() && !jeu.aPerdu()) {
+                gererCombat(attaque, jeu, ennemi);
+            }
+        }
+        if (jeu.aPerdu()) {
+            jeu.defaite();
+        } else {
+            jeu.victoire();
+        }
+
+    }
+
+    public static void jeu2() {
+        /**
+         * Jeu 2 : Rogue Survivor dans les ruines.
+         */
+        Personnage personnage2 = new Personnage("Rogue Survivor", 120, 20, "Matrix");
+        Carte carte2 = new Carte("Ruins", "Tech Lab", 15);
+        Jeu jeu2 = new Jeu(carte2, personnage2, null);
+        Attaque attaque2 = new Attaque(jeu2, personnage2);
+        jeu2.setAttaque(attaque2);
+        Ennemi ennemi2;
+
+        //déroulement jeu 2
+        jeu2.demarrerLeJeu();
+        while (!jeu2.aGagne() && !jeu2.aPerdu()) {
+            jeu2.deplacer();
+            ennemi2 = jeu2.rencontrerEnnemi();
+            attaque2.setEnnemi(ennemi2);
+            jeu2.coupSpecial(); // Vérifie si le coup spécial est activé
+            //combat:
+            while (!attaque2.ennemiVaincu() && !jeu2.aPerdu()) {
+                gererCombat(attaque2, jeu2, ennemi2);
+            }
+        }
+        if (jeu2.aPerdu()) {
+            jeu2.defaite();
+        } else {
+            jeu2.victoire();
+        }
+    }
+
+    public static void jeu3() {
+        /**
+         * Jeu 3: Un habitant de Vault dans un bunker
+         */
+        Personnage personnage3 = new Personnage("Vault inhabitant", 90, 5, "Heal");
+        Carte carte3 = new Carte("Bunker", "Vault tech shelter", 3);
+        Jeu jeu3 = new Jeu(carte3, personnage3, null);
+        Attaque attaque3 = new Attaque(jeu3, personnage3);
+        jeu3.setAttaque(attaque3);
+        Ennemi ennemi3;
+
+        //Déroulement jeu 3
+        jeu3.demarrerLeJeu();
+        while (!jeu3.aGagne() && !jeu3.aPerdu()) {
+            jeu3.deplacer();
+            ennemi3 = jeu3.rencontrerEnnemi();
+            attaque3.setEnnemi(ennemi3);
+            jeu3.coupSpecial(); // Vérifie si le coup spécial est activé
+            //combat:
+            while (!attaque3.ennemiVaincu() && !jeu3.aPerdu()) {
+                gererCombat(attaque3, jeu3, ennemi3);
+            }
+        }
+        if (jeu3.aPerdu()) {
+            jeu3.defaite();
+        } else {
+            jeu3.victoire();
+        }
+
+    }
+
+    public static void jeu4() {
+        /**
+         * Jeu 4: Lee Moldaver dans une usine.
+         */
+        Personnage personnage4 = new Personnage("Lee Moldaver", 100, 12, "Gantelets");
+        Carte carte4 = new Carte("Supply Plant", "Los Angeles", 10);
+        Jeu jeu4 = new Jeu(carte4, personnage4, null);
+        Attaque attaque4 = new Attaque(jeu4, personnage4);
+        jeu4.setAttaque(attaque4);
+        Ennemi ennemi4;
+
+        //Déroulement jeu 4
+        jeu4.demarrerLeJeu();
+        while (!jeu4.aGagne() && !jeu4.aPerdu()) {
+            jeu4.deplacer();
+            ennemi4 = jeu4.rencontrerEnnemi();
+            attaque4.setEnnemi(ennemi4);
+            jeu4.coupSpecial(); // Vérifie si le coup spécial est activé
+
+            // combat:
+            while (!attaque4.ennemiVaincu() && !jeu4.aPerdu()) {
+                gererCombat(attaque4, jeu4, ennemi4);
+            }
+        }
+        if (jeu4.aPerdu()) {
+            jeu4.defaite();
+        } else {
+            jeu4.victoire();
+        }
+
+    }
+
+        static void gererCombat (Attaque attaque, Jeu jeu, Ennemi ennemi){
+            // L'ennemi attaque
+            if (ennemi.isGangster()) {
+                deroulementAttaqueEnnemi(attaque, jeu);
+                deroulementAttaquePersonnage(attaque, jeu);
+            } else {
+                deroulementAttaquePersonnage(attaque, jeu);
+                deroulementAttaqueEnnemi(attaque, jeu);
+            }
+        }
+
+        private static void deroulementAttaqueEnnemi (Attaque attaque, Jeu jeu){
+            if (!attaque.ennemiVaincu()) {
+                if (attaque.CSMatrix()) {
+                    attaque.useCSMatrix();
+                } else {
+                    if (attaque.CSGantelets()) {
+                        attaque.useCSGantelets();
+                    }
+                    attaque.ennemiAttaque();
+                }
+                jeu.aPerdu();
+            }
+        }
+
+        private static void deroulementAttaquePersonnage (Attaque attaque, Jeu jeu){
+            if (!jeu.aPerdu()) {
+                if (attaque.CSOneShot()) {
+                    attaque.useCSOneShot();
+                } else {
+                    if (attaque.CSHeal()) {
+                        attaque.useCSHeal();
+                    }
+                    attaque.personnageAttaque();
+                    if (attaque.ennemiVaincu()) {
+                        System.out.println("L'ennemi a été vaincu");
+                    }
+                }
+            }
+        }
+    }
 
 //VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
 //Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
 
+        /*
         public class Main {
             //  @SneakyThrows
             public static void main(String[] args) {
                 Logger logger = Logger.getLogger(Main.class.getName());
                 FileHandler fileHandler = null;
                 try {
-                    fileHandler = new FileHandler("*/GitHub/BeatThemAll.log", true);
+                    fileHandler = new FileHandler("BeatThemAll.log", true);
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (SecurityException e) {
@@ -45,7 +200,7 @@ public class Main {
                 logger.warning("warning dommage");
                 logger.info("L'application a démarré");
                 logger.severe("severe dommage");
-
+*/
         /*
         //createFile(); { //méthode à la mano pour créer un fichier sans sneaky thorws
             try {
@@ -64,13 +219,6 @@ public class Main {
         logger.info("L'application a démarré");
         */
 
-                //Jeu où le héros peut gagner et perdre
-                Personnage personnage = new Personnage("Vault Dweller", 150, 10, "OneShot");
-                Carte carte = new Carte("Wasteland", "Nuclear Ruins", 10);
-                Attaque attaque = new Attaque(null, personnage, carte);
-                Jeu jeu = new Jeu(carte, personnage, attaque);
-                attaque.setJeu(jeu);
-                jeu.demarrerLeJeu();
 
 
                 //Personnage personnage = new Personnage("Mael", 100, 300, 30);
@@ -150,7 +298,5 @@ public class Main {
 
          */
 
-            }
-        }
-    }
-}
+
+

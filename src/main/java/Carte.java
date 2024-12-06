@@ -17,6 +17,13 @@ public class Carte {
         this.fin=longueur;
         this.longueur = longueur;
     }
+
+    public void setLongueur(int longueur) {
+        if(longueur<3){
+            throw new IllegalArgumentException("La longueur de la carte est trop petite. Il faut au moins 3 niveaux.");
+        }
+        this.longueur = longueur;
+    }
 }
 
 /*
