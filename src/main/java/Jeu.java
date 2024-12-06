@@ -80,6 +80,7 @@ public class Jeu {
         System.out.println("Capacité spéciale : " + personnage.getCapaciteSpeciale());
         System.out.println("Vous vous trouvez sur le lieu " + carte.getNom() + " à " + carte.getLieu());
         System.out.println("Longueur de la carte : " + carte.getLongueur());
+        Logging.logger.info("Le jeu a démarré + demande infos user");
     }
 
     /**
@@ -100,6 +101,7 @@ public class Jeu {
             System.out.println("\n");
             System.out.println("ROUND " + positionPerso + " SUR " + totalDeplacements + " !! ");
             System.out.println(personnage.getNom() + " a " + personnage.getPv() + "PV");
+            Logging.logger.info("Le personnage a " + personnage.getPv() + "PV");
     }
 
     /**
@@ -120,9 +122,11 @@ public class Jeu {
 
     public void victoire(){
         System.out.println("Vous avez gagné! vous avez passé tous les niveaux. \n");
+        Logging.logger.info("Le joueur a gagné");
     }
     public void defaite(){
         System.out.println("Vous avez perdu, vous n'avez plus de PV \n");
+        Logging.logger.info("Le joueur a perdu");
     }
 
 
@@ -136,6 +140,7 @@ public class Jeu {
             default -> null;
         };
         System.out.println("Vous rencontrez un " + ennemi.getNom() + " avec " + ennemi.getPv() + " PV" + " et " + ennemi.getForceAttaque() + " de force d'attaque");
+        Logging.logger.info("Le joueur rencontre un ennemi");
         return ennemi;
     }
 
@@ -143,6 +148,7 @@ public class Jeu {
     public void coupSpecial() {
         if (positionPerso == deplacementSpecial) {
             System.out.println("La capacité spéciale s'active !");
+            Logging.logger.info("La capacité spéciale s'active");
             utiliseCapacite = true;
         }
 

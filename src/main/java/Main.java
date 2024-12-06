@@ -23,6 +23,7 @@ public class Main {
         Attaque attaque = new Attaque(jeu, personnage);
         jeu.setAttaque(attaque);
         Ennemi ennemi;
+        Logging.logger.info("Début du jeu 1");
 
         //déroulement jeu 1
         jeu.demarrerLeJeu();
@@ -41,7 +42,7 @@ public class Main {
         } else {
             jeu.victoire();
         }
-
+        Logging.logger.info("Fin du jeu 1");
     }
 
     public static void jeu2() {
@@ -54,6 +55,7 @@ public class Main {
         Attaque attaque2 = new Attaque(jeu2, personnage2);
         jeu2.setAttaque(attaque2);
         Ennemi ennemi2;
+        Logging.logger.info("Début du jeu 2");
 
         //déroulement jeu 2
         jeu2.demarrerLeJeu();
@@ -72,6 +74,7 @@ public class Main {
         } else {
             jeu2.victoire();
         }
+        Logging.logger.info("Fin du jeu 2");
     }
 
     public static void jeu3() {
@@ -84,6 +87,7 @@ public class Main {
         Attaque attaque3 = new Attaque(jeu3, personnage3);
         jeu3.setAttaque(attaque3);
         Ennemi ennemi3;
+        Logging.logger.info("Début du jeu 3");
 
         //Déroulement jeu 3
         jeu3.demarrerLeJeu();
@@ -102,7 +106,7 @@ public class Main {
         } else {
             jeu3.victoire();
         }
-
+        Logging.logger.info("FIN du jeu 3");
     }
 
     public static void jeu4() {
@@ -178,15 +182,14 @@ public class Main {
             }
         }
     }
-    
-    
-    
+
+
  @SneakyThrows
  public static void Main(String[] args) {
         Logger logger = Logger.getLogger(Main.class.getName());
         FileHandler fileHandler = null;
         try {
-             fileHandler = new FileHandler("BeatThemAll.log", true);
+             fileHandler = new FileHandler("BeatThemAll1.log", true);
             } catch (IOException | SecurityException e) {
              e.printStackTrace();
             }
@@ -194,7 +197,8 @@ public class Main {
             logger.setLevel(Level.ALL);
             logger.warning("warning dommage");
             logger.info("L'application a démarré");
-            logger.severe("severe dommage");}
+            logger.severe("severe dommage");
+}
 
 //************************************************************************************************************************************************************************************
  /*Archive et pistes non poursuivies
