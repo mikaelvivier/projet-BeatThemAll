@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-12-07T11:38:47.740527400Z</date>
+  <millis>1733571527740</millis>
+  <nanos>527400</nanos>
+  <sequence>46</sequence>
+  <logger>logger.Main</logger>
+  <level>WARNING</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>warning</message>
+</record>
+<record>
+  <date>2024-12-07T11:38:47.740527400Z</date>
+  <millis>1733571527740</millis>
+  <nanos>527400</nanos>
+  <sequence>47</sequence>
+  <logger>logger.Main</logger>
+  <level>INFO</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>L'application a démarré</message>
+</record>
+<record>
+  <date>2024-12-07T11:38:47.740527400Z</date>
+  <millis>1733571527740</millis>
+  <nanos>527400</nanos>
+  <sequence>48</sequence>
+  <logger>logger.Main</logger>
+  <level>SEVERE</level>
+  <class>Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>joli problème</message>
+</record>
+</log>

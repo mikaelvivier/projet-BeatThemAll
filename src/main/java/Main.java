@@ -2,15 +2,42 @@
 import java.io.IOException;
 import java.util.logging.*;
 
+import static java.util.logging.Level.*;
+
 //VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
 //Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
-public static class Main {
+public class Main {
     public static void main(String[] args) {
         // Exécuter les différents jeux/tests
         //jeu1();
         //jeu2();
         jeu3();
         //jeu4();
+
+
+        // Charger la configuration de logging
+        try {
+            LogManager.getLogManager().readConfiguration(
+                    Main.class.getResourceAsStream("./src/main/resources/logging.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Logger logger = Logger.getLogger("logger.Main");
+
+        // Ajout du FileHandler
+        FileHandler fileHandler = null;
+        try {
+            fileHandler = new FileHandler();
+        } catch (SecurityException | IOException e) {
+            e.printStackTrace();
+        }
+        logger.addHandler(fileHandler);
+
+        //Log messages
+        logger.info("L'application a démarré");
+        logger.warning("warning");
+        logger.log(Level.SEVERE,"problème");
     }
 
 
@@ -183,7 +210,7 @@ public static class Main {
             }
         }
     }
-
+/*
  //@SneakyThrows
  public static void main(String[] args) {
         Logger logger = Logger.getLogger("logger.Main");
