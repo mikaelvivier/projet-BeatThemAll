@@ -12,8 +12,12 @@ public class PersonnageTest {
     private Ennemi ennemi;
 
     @BeforeEach
+    /**
+     * Met en place un jeu qui correspond au test 1 : La force d'attaque du personnage est égale aux PV max de l'ennemi Catcheur.
+     * Ce set up sera utilisé pour tous les autres tests.
+     */
     public void setUpTest1() {
-        personnage = new Personnage("Hercule", 100, 80, "OneShot"); //force d'attaque égale aux PV max de l'ennemi Catcheur
+        personnage = new Personnage("Hercule", 100, 80, "OneShot");
         carte = new Carte("Far West", "cow city", 10);
         attaque=new Attaque(jeu, personnage);
         jeu = new Jeu(carte, personnage, attaque);
@@ -21,8 +25,11 @@ public class PersonnageTest {
 
     }
 
+    /**
+     * Met en place un jeu qui correspond au test 2 : Les PV du personnage sont égaux à 0.
+     */
     private void setUpTest2() {
-        personnage = new Personnage("Vault Dweller", 50, 10, "Matrix");
+        personnage = new Personnage("Vault Dweller", 0, 10, "Matrix");
         carte = new Carte("Wasteland", "Nuclear Ruins", 10);
         attaque=new Attaque(jeu, personnage);
         jeu = new Jeu(carte, personnage, attaque);
@@ -47,6 +54,9 @@ public class PersonnageTest {
     }
 
     @Test
+    /**
+     * Ce test vérifie que l'ennemi est toujours vaincu si le personnage a la même force d'attaque que les PV max d'un attaquant (le catcheur a 80 PV).
+     */
     public void testRencontre() {
         ennemi= jeu.rencontrerEnnemi();
         attaque.setEnnemi(ennemi);
@@ -55,12 +65,18 @@ public class PersonnageTest {
     }
 
     @Test
+    /**
+     * Ce test vérifier que le personnage meurt bien s'il a 0 PV.
+     */
     public void testPersonnageMeurt(){
         setUpTest2();
         assertTrue(jeu.aPerdu());
     }
 
     @Test
+    /**
+     * Ce test vérifie que la force d'attaque du personnage ne peut pas être inférieure ou égale à 0, ni être réduite.
+     */
     public void testForceAttaquePersonnage(){
         try {
             personnage.setForceAttaque(-10);
@@ -71,6 +87,9 @@ public class PersonnageTest {
     }
 
     @Test
+    /**
+     * Ce test vérifie que la longueur de la carte ne puisse pas être inférieure à 3.
+     */
     public void testLongueurCarte(){
         try {
             carte.setLongueur(2); // Supposons que l'année ne peut pas être négative
@@ -81,7 +100,10 @@ public class PersonnageTest {
     }
 
     @Test
-    public void capaciteSpecialeExiste(){
+    /**
+     * Ce test vérifie que la capacité spéciale ne puisse pas être vrai si elle n'est pas dans la liste de la méthode Personnage.setCapaciteSpeciale().
+     */
+    public void capaciteSpecialeExistePas(){
         try {
             personnage.setCapaciteSpeciale("Rocket"); // Supposons que l'année ne peut pas être négative
             fail("Une exception devrait être lancée pour une capacité spéciale inexistante");
@@ -91,6 +113,9 @@ public class PersonnageTest {
     }
 
     @Test
+    /**
+     * Ce test vérifie que l'ennemi est bien vaincu après la méthode One Shot.
+     */
     public void testOneShot(){
         ennemi= jeu.rencontrerEnnemi();
         attaque.setEnnemi(ennemi);
