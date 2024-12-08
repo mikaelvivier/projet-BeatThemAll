@@ -1,11 +1,15 @@
 //import lombok.SneakyThrows;
 import java.io.IOException;
 import java.util.logging.*;
-
 import static java.util.logging.Level.*;
 
 //VIVIER Mikaël, PIOCHE-THIROUX Maël FISATI 27
 //Ce jeu se déroule dans l'univers de Fallout (franchise de jeu de Bethesda)
+//Le joueur incarne un personnage qui doit traverser une carte en affrontant des ennemis.
+//Le personnage a des points de vie et une force d'attaque. Il peut utiliser des coups spéciaux.
+//Pour consulter les logs, ouvrir le fichier BeatThemAll.log
+
+
 public class Main {
 
     public static void main(String[] args) {
