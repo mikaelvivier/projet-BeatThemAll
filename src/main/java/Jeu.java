@@ -108,13 +108,11 @@ public class Jeu {
      * Donne les informations sur la position et la vie du personnage à chaque ROUND.
      */
     public void deplacer() {
-        /*
         try {
                 Thread.sleep(7000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-        */
 
             positionPerso += 1;
             System.out.println("\n");
