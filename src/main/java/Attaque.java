@@ -1,6 +1,8 @@
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 import java.util.logging.Logger;
@@ -32,6 +34,14 @@ public class Attaque implements CapaciteSpeciale{
     Ennemi ennemi;
 
     Logger logger = Logger.getLogger("logger.Main");
+
+    /**
+     * Liste pour stocker les dégâts infligés par le personnage
+     */
+    private List<Integer> listeDegatsInfligesPersonnages = new ArrayList<>();
+
+    private List<Integer> listeDegatsInfligesEnnemi = new ArrayList<>();
+
     /**
      *
      * @param jeu réfère à la class Jeu
@@ -55,6 +65,7 @@ public class Attaque implements CapaciteSpeciale{
             ennemi.setPv(ennemi.getPv() - nbAttaques * personnage.getForceAttaque());
             System.out.println(ennemi.getNom() + " a " + ennemi.getPv() + " PV ");
             logger.info("PV de " + ennemi.getNom() + " après");
+            listeDegatsInfligesPersonnages.add(nbAttaques * personnage.getForceAttaque()); //ajoute les dégats infligés à la liste.
             if (ennemiVaincu()) {
                 System.out.println("L'ennemi a été vaincu");
             }
@@ -69,6 +80,7 @@ public class Attaque implements CapaciteSpeciale{
              personnage.setPv(personnage.getPv() - ennemi.getForceAttaque());
              System.out.println(personnage.getNom() + " a " + personnage.getPv() + " PV ");
              logger.info("PV de " + personnage.getNom() + " après");
+             listeDegatsInfligesEnnemi.add(ennemi.getForceAttaque()); // Ajoute les dégats infligés par l'ennemi à la liste.
     }
 
     /**
@@ -165,6 +177,24 @@ public class Attaque implements CapaciteSpeciale{
             personnage.setForceAttaque(personnage.getForceAttaque() + 2);
             jeu.setUtiliseCapacite(false);
 
+    }
+
+    /**
+     * @return le total des dégâts infligés par le personnage
+     */
+    public int getDegatsTotauxInfligesPersonnage() {
+        return listeDegatsInfligesPersonnages.stream()
+                .mapToInt(Integer::intValue) // Convertit les Integer en int
+                .sum(); // Calcule la somme des dégâts
+    }
+
+    /**
+     * @return le total des dégâts subis par le personnage
+     */
+    public int getDegatsTotauxSubis() {
+        return listeDegatsInfligesEnnemi.stream()
+                .mapToInt(Integer::intValue) // Convertit les Integer en int
+                .sum(); // Calcule la somme des dégâts
     }
 
     @Override
