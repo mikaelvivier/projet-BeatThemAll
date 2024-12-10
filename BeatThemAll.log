@@ -1,4 +1,524 @@
-déc. 08, 2024 3:49:05 PM Jeu demarrerLeJeu
+déc. 08, 2024 3:57:42 PM Jeu demarrerLeJeu
 INFO: Le jeu a démarré + demande infos user
-déc. 08, 2024 3:49:05 PM Main jeu1
+déc. 08, 2024 3:57:42 PM Main jeu1
 INFO: Début du jeu 1
+déc. 08, 2024 3:57:49 PM Jeu deplacer
+INFO: Le personnage a 150PV
+déc. 08, 2024 3:57:49 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:57:49 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Cooper Howard
+déc. 08, 2024 3:57:49 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:57:49 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Gangster
+déc. 08, 2024 3:57:49 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:57:49 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Cooper Howard
+déc. 08, 2024 3:57:49 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:57:49 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Gangster
+déc. 08, 2024 3:57:49 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:57:49 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Cooper Howard
+déc. 08, 2024 3:57:49 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:57:49 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Gangster
+déc. 08, 2024 3:57:49 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:57:56 PM Jeu deplacer
+INFO: Le personnage a 120PV
+déc. 08, 2024 3:57:56 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:57:56 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur kamikaze
+déc. 08, 2024 3:57:56 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 3:57:56 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Cooper Howard
+déc. 08, 2024 3:57:56 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:57:56 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur kamikaze
+déc. 08, 2024 3:57:56 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 3:58:03 PM Jeu deplacer
+INFO: Le personnage a 100PV
+déc. 08, 2024 3:58:03 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:58:03 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur kamikaze
+déc. 08, 2024 3:58:03 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 3:58:03 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Cooper Howard
+déc. 08, 2024 3:58:03 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:58:03 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur kamikaze
+déc. 08, 2024 3:58:03 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 3:58:10 PM Jeu deplacer
+INFO: Le personnage a 80PV
+déc. 08, 2024 3:58:10 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:58:10 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Brigand
+déc. 08, 2024 3:58:10 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 3:58:10 PM Attaque ennemiAttaque
+INFO: Attaque de Brigand sur Cooper Howard
+déc. 08, 2024 3:58:10 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:58:10 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Brigand
+déc. 08, 2024 3:58:10 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 3:58:17 PM Jeu deplacer
+INFO: Le personnage a 70PV
+déc. 08, 2024 3:58:17 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:58:17 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Cooper Howard
+déc. 08, 2024 3:58:17 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:58:17 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Gangster
+déc. 08, 2024 3:58:17 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:58:17 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Cooper Howard
+déc. 08, 2024 3:58:17 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:58:17 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Gangster
+déc. 08, 2024 3:58:17 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:58:17 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Cooper Howard
+déc. 08, 2024 3:58:17 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:58:17 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Gangster
+déc. 08, 2024 3:58:17 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:58:17 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Cooper Howard
+déc. 08, 2024 3:58:17 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:58:17 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Gangster
+déc. 08, 2024 3:58:17 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:58:24 PM Jeu deplacer
+INFO: Le personnage a 30PV
+déc. 08, 2024 3:58:24 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:58:24 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Brigand
+déc. 08, 2024 3:58:24 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 3:58:24 PM Attaque ennemiAttaque
+INFO: Attaque de Brigand sur Cooper Howard
+déc. 08, 2024 3:58:24 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:58:24 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur Brigand
+déc. 08, 2024 3:58:24 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 3:58:31 PM Jeu deplacer
+INFO: Le personnage a 20PV
+déc. 08, 2024 3:58:31 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:58:31 PM Jeu coupSpecial
+INFO: La capacité spéciale s'active
+déc. 08, 2024 3:58:31 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Cooper Howard
+déc. 08, 2024 3:58:31 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:58:31 PM Attaque useCSOneShot
+INFO: OneShot de Cooper Howard
+déc. 08, 2024 3:58:38 PM Jeu deplacer
+INFO: Le personnage a 10PV
+déc. 08, 2024 3:58:38 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:58:38 PM Attaque personnageAttaque
+INFO: Attaque de Cooper Howard sur kamikaze
+déc. 08, 2024 3:58:38 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 3:58:38 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Cooper Howard
+déc. 08, 2024 3:58:38 PM Attaque ennemiAttaque
+INFO: PV de Cooper Howard après
+déc. 08, 2024 3:58:38 PM Jeu defaite
+INFO: Le joueur a perdu
+déc. 08, 2024 3:58:38 PM Main jeu1
+INFO: Fin du jeu 1
+déc. 08, 2024 3:58:38 PM Main jeu2
+INFO: Début du jeu 2
+déc. 08, 2024 3:58:38 PM Jeu demarrerLeJeu
+INFO: Le jeu a démarré + demande infos user
+déc. 08, 2024 3:58:45 PM Jeu deplacer
+INFO: Le personnage a 120PV
+déc. 08, 2024 3:58:45 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:58:45 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Catcheur
+déc. 08, 2024 3:58:45 PM Attaque personnageAttaque
+INFO: PV de Catcheur après
+déc. 08, 2024 3:58:52 PM Jeu deplacer
+INFO: Le personnage a 120PV
+déc. 08, 2024 3:58:52 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:58:52 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Rogue Survivor
+déc. 08, 2024 3:58:52 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 3:58:52 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Gangster
+déc. 08, 2024 3:58:52 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:58:59 PM Jeu deplacer
+INFO: Le personnage a 110PV
+déc. 08, 2024 3:58:59 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:58:59 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Brigand
+déc. 08, 2024 3:58:59 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 3:59:06 PM Jeu deplacer
+INFO: Le personnage a 110PV
+déc. 08, 2024 3:59:06 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:59:06 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur kamikaze
+déc. 08, 2024 3:59:06 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 3:59:13 PM Jeu deplacer
+INFO: Le personnage a 110PV
+déc. 08, 2024 3:59:13 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:59:13 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Rogue Survivor
+déc. 08, 2024 3:59:13 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 3:59:13 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Gangster
+déc. 08, 2024 3:59:13 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:59:13 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Rogue Survivor
+déc. 08, 2024 3:59:13 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 3:59:13 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Gangster
+déc. 08, 2024 3:59:13 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:59:20 PM Jeu deplacer
+INFO: Le personnage a 90PV
+déc. 08, 2024 3:59:20 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:59:20 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Brigand
+déc. 08, 2024 3:59:20 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 3:59:27 PM Jeu deplacer
+INFO: Le personnage a 90PV
+déc. 08, 2024 3:59:27 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:59:27 PM Jeu coupSpecial
+INFO: La capacité spéciale s'active
+déc. 08, 2024 3:59:27 PM Attaque useCSMatrix
+INFO: Matrix de Rogue Survivor
+déc. 08, 2024 3:59:27 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Gangster
+déc. 08, 2024 3:59:27 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:59:27 PM Attaque useCSMatrix
+INFO: Matrix de Rogue Survivor
+déc. 08, 2024 3:59:27 PM Attaque useCSMatrix
+INFO: Fin de la capacité Matrix
+déc. 08, 2024 3:59:27 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Gangster
+déc. 08, 2024 3:59:27 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:59:34 PM Jeu deplacer
+INFO: Le personnage a 90PV
+déc. 08, 2024 3:59:34 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:59:34 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Rogue Survivor
+déc. 08, 2024 3:59:34 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 3:59:34 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Gangster
+déc. 08, 2024 3:59:34 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:59:34 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Rogue Survivor
+déc. 08, 2024 3:59:34 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 3:59:34 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Gangster
+déc. 08, 2024 3:59:34 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:59:41 PM Jeu deplacer
+INFO: Le personnage a 70PV
+déc. 08, 2024 3:59:41 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:59:41 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Brigand
+déc. 08, 2024 3:59:41 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 3:59:41 PM Attaque ennemiAttaque
+INFO: Attaque de Brigand sur Rogue Survivor
+déc. 08, 2024 3:59:41 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 3:59:41 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Brigand
+déc. 08, 2024 3:59:41 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 3:59:48 PM Jeu deplacer
+INFO: Le personnage a 60PV
+déc. 08, 2024 3:59:48 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:59:48 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Rogue Survivor
+déc. 08, 2024 3:59:48 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 3:59:48 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Gangster
+déc. 08, 2024 3:59:48 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 3:59:55 PM Jeu deplacer
+INFO: Le personnage a 50PV
+déc. 08, 2024 3:59:55 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 3:59:55 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Catcheur
+déc. 08, 2024 3:59:55 PM Attaque personnageAttaque
+INFO: PV de Catcheur après
+déc. 08, 2024 4:00:02 PM Jeu deplacer
+INFO: Le personnage a 50PV
+déc. 08, 2024 4:00:02 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:00:02 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Brigand
+déc. 08, 2024 4:00:02 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 4:00:02 PM Attaque ennemiAttaque
+INFO: Attaque de Brigand sur Rogue Survivor
+déc. 08, 2024 4:00:02 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 4:00:02 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Brigand
+déc. 08, 2024 4:00:02 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 4:00:09 PM Jeu deplacer
+INFO: Le personnage a 40PV
+déc. 08, 2024 4:00:09 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:00:09 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Rogue Survivor
+déc. 08, 2024 4:00:09 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 4:00:09 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur Gangster
+déc. 08, 2024 4:00:09 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 4:00:16 PM Jeu deplacer
+INFO: Le personnage a 30PV
+déc. 08, 2024 4:00:16 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:00:16 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur kamikaze
+déc. 08, 2024 4:00:16 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:16 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Rogue Survivor
+déc. 08, 2024 4:00:16 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 4:00:16 PM Attaque personnageAttaque
+INFO: Attaque de Rogue Survivor sur kamikaze
+déc. 08, 2024 4:00:16 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:23 PM Jeu deplacer
+INFO: Le personnage a 10PV
+déc. 08, 2024 4:00:23 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:00:23 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Rogue Survivor
+déc. 08, 2024 4:00:23 PM Attaque ennemiAttaque
+INFO: PV de Rogue Survivor après
+déc. 08, 2024 4:00:23 PM Jeu defaite
+INFO: Le joueur a perdu
+déc. 08, 2024 4:00:23 PM Main jeu2
+INFO: Fin du jeu 2
+déc. 08, 2024 4:00:23 PM Personnage setForceAttaque
+WARNING: Force d'attaque basse définie pour Vault inhabitant: 5
+déc. 08, 2024 4:00:23 PM Carte setLongueur
+WARNING: Carte petite. 0
+déc. 08, 2024 4:00:23 PM Main jeu3
+INFO: Début du jeu 3
+déc. 08, 2024 4:00:23 PM Jeu demarrerLeJeu
+INFO: Le jeu a démarré + demande infos user
+déc. 08, 2024 4:00:30 PM Jeu deplacer
+INFO: Le personnage a 90PV
+déc. 08, 2024 4:00:30 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: Attaque de Vault inhabitant sur kamikaze
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:30 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Vault inhabitant
+déc. 08, 2024 4:00:30 PM Attaque ennemiAttaque
+INFO: PV de Vault inhabitant après
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: Attaque de Vault inhabitant sur kamikaze
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:30 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Vault inhabitant
+déc. 08, 2024 4:00:30 PM Attaque ennemiAttaque
+INFO: PV de Vault inhabitant après
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: Attaque de Vault inhabitant sur kamikaze
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:30 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Vault inhabitant
+déc. 08, 2024 4:00:30 PM Attaque ennemiAttaque
+INFO: PV de Vault inhabitant après
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: Attaque de Vault inhabitant sur kamikaze
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:30 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Vault inhabitant
+déc. 08, 2024 4:00:30 PM Attaque ennemiAttaque
+INFO: PV de Vault inhabitant après
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: Attaque de Vault inhabitant sur kamikaze
+déc. 08, 2024 4:00:30 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:37 PM Jeu deplacer
+INFO: Le personnage a 10PV
+déc. 08, 2024 4:00:37 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:00:37 PM Attaque personnageAttaque
+INFO: Attaque de Vault inhabitant sur Brigand
+déc. 08, 2024 4:00:37 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 4:00:37 PM Attaque ennemiAttaque
+INFO: Attaque de Brigand sur Vault inhabitant
+déc. 08, 2024 4:00:37 PM Attaque ennemiAttaque
+INFO: PV de Vault inhabitant après
+déc. 08, 2024 4:00:37 PM Jeu defaite
+INFO: Le joueur a perdu
+déc. 08, 2024 4:00:37 PM Main jeu3
+INFO: FIN du jeu 3
+déc. 08, 2024 4:00:37 PM Jeu demarrerLeJeu
+INFO: Le jeu a démarré + demande infos user
+déc. 08, 2024 4:00:44 PM Jeu deplacer
+INFO: Le personnage a 100PV
+déc. 08, 2024 4:00:44 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:00:44 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur kamikaze
+déc. 08, 2024 4:00:44 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:51 PM Jeu deplacer
+INFO: Le personnage a 100PV
+déc. 08, 2024 4:00:51 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:00:51 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur kamikaze
+déc. 08, 2024 4:00:51 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:51 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Lee Moldaver
+déc. 08, 2024 4:00:51 PM Attaque ennemiAttaque
+INFO: PV de Lee Moldaver après
+déc. 08, 2024 4:00:51 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur kamikaze
+déc. 08, 2024 4:00:51 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:51 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Lee Moldaver
+déc. 08, 2024 4:00:51 PM Attaque ennemiAttaque
+INFO: PV de Lee Moldaver après
+déc. 08, 2024 4:00:51 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur kamikaze
+déc. 08, 2024 4:00:51 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:00:58 PM Jeu deplacer
+INFO: Le personnage a 60PV
+déc. 08, 2024 4:00:58 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:00:58 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Lee Moldaver
+déc. 08, 2024 4:00:58 PM Attaque ennemiAttaque
+INFO: PV de Lee Moldaver après
+déc. 08, 2024 4:00:58 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur Gangster
+déc. 08, 2024 4:00:58 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 4:00:58 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Lee Moldaver
+déc. 08, 2024 4:00:58 PM Attaque ennemiAttaque
+INFO: PV de Lee Moldaver après
+déc. 08, 2024 4:00:58 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur Gangster
+déc. 08, 2024 4:00:58 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 4:00:58 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Lee Moldaver
+déc. 08, 2024 4:00:58 PM Attaque ennemiAttaque
+INFO: PV de Lee Moldaver après
+déc. 08, 2024 4:00:58 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur Gangster
+déc. 08, 2024 4:00:58 PM Attaque personnageAttaque
+INFO: PV de Gangster après
+déc. 08, 2024 4:01:05 PM Jeu deplacer
+INFO: Le personnage a 30PV
+déc. 08, 2024 4:01:05 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:01:05 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur kamikaze
+déc. 08, 2024 4:01:05 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:01:05 PM Attaque ennemiAttaque
+INFO: Attaque de kamikaze sur Lee Moldaver
+déc. 08, 2024 4:01:05 PM Attaque ennemiAttaque
+INFO: PV de Lee Moldaver après
+déc. 08, 2024 4:01:05 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur kamikaze
+déc. 08, 2024 4:01:05 PM Attaque personnageAttaque
+INFO: PV de kamikaze après
+déc. 08, 2024 4:01:12 PM Jeu deplacer
+INFO: Le personnage a 10PV
+déc. 08, 2024 4:01:12 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:01:12 PM Attaque personnageAttaque
+INFO: Attaque de Lee Moldaver sur Brigand
+déc. 08, 2024 4:01:12 PM Attaque personnageAttaque
+INFO: PV de Brigand après
+déc. 08, 2024 4:01:19 PM Jeu deplacer
+INFO: Le personnage a 10PV
+déc. 08, 2024 4:01:19 PM Jeu rencontrerEnnemi
+INFO: Le joueur rencontre un ennemi
+déc. 08, 2024 4:01:19 PM Jeu coupSpecial
+INFO: La capacité spéciale s'active
+déc. 08, 2024 4:01:19 PM Attaque ennemiAttaque
+INFO: Attaque de Gangster sur Lee Moldaver
+déc. 08, 2024 4:01:19 PM Attaque ennemiAttaque
+INFO: PV de Lee Moldaver après
+déc. 08, 2024 4:01:19 PM Jeu defaite
+INFO: Le joueur a perdu
+déc. 08, 2024 4:01:19 PM Main jeu4
+INFO: FIN du jeu 4
